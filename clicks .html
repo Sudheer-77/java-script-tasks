@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Show Message</title>
+</head>
+<body>
+
+    <button onclick="showMessage()">Show Message</button>
+
+    <p id="message"></p>
+
+    <script>
+let count = 0;
+        function showMessage() {
+            if(count==0){
+            document.getElementById("message").innerHTML = "Welcome to JavaScript!";
+            count++;
+        }
+        else{
+            document.getElementById("message").innerHTML = " "
+            count--;
+
+        }
+    }
+    </script>
+
+</body>
+</html>
